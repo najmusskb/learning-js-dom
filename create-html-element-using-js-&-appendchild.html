@@ -1,0 +1,185 @@
+<!-- java script diye kivabe ul,li,p,div any thing input hisabe diye output dekha jay seita hocche ei module er kag.. consol e giya first e type korte hobe 
+
+document.createElement('p')
+document.createElement('div')
+document.createElement('h1')
+document.createElement('a to z tag')
+
+ei tag gulo use korle amra js theke input dite parbo 
+
+tobe ei kag gulo korte gele amader kichu step follow korte hobe ....
+
+step gulo nice deya holo--------
+
+nice java script er code deya ache 
+
+
+1.create a element
+2.where to add 
+
+
+
+-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- <style>
+        .blog{
+            border: 1px solid blue;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+    </style> -->
+
+
+</head>
+
+<body>
+
+
+    <section id="blogs">
+        <h1>blog-list</h1>
+        <ul id="blog-5-add">
+            <li>blog-1</li>
+            <li>blog-2</li>
+            <li>blog-3</li>
+            <li>blog-4</li>
+        </ul>
+    </section>
+
+
+
+
+
+    <article class="blog">
+        <h1>this is java script lecture</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, consectetur excepturi qui atque esse veniam
+            eveniet ut architecto beatae in dicta, perspiciatis illum natus? Vero amet perspiciatis minima optio cum?
+        </p>
+    </article>
+
+
+
+
+
+    <article class="blog">
+        <h1>this is java script lecture</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, consectetur excepturi qui atque esse veniam
+            eveniet ut architecto beatae in dicta, perspiciatis illum natus? Vero amet perspiciatis minima optio cum?
+        </p>
+    </article>
+
+
+
+
+
+    <article class="blog">
+        <h1>this is java script lecture</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, consectetur excepturi qui atque esse veniam
+            eveniet ut architecto beatae in dicta, perspiciatis illum natus? Vero amet perspiciatis minima optio cum?
+        </p>
+    </article>
+
+
+
+    <article class="blog">
+        <h1>this is java script lecture</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, consectetur excepturi qui atque esse veniam
+            eveniet ut architecto beatae in dicta, perspiciatis illum natus? Vero amet perspiciatis minima optio cum?
+        </p>
+    </article>
+
+
+
+
+
+    <!-- java script code -->
+
+    <script>
+
+        const blogs = document.getElementsByClassName('blog');
+
+        for (const blog of blogs) {
+
+            blog.style.border = '2px solid green';
+            blog.style.borderRadius = '20px';
+            blog.style.margin = '20px';
+            blog.style.padding = '20px';
+            blog.style.backgroundColor = 'pink';
+        }
+
+
+
+        // create and add element by using javascript
+
+        const li = document.createElement('li');
+        li.innerText = 'blog-5';
+        // where to
+        const ul = document.getElementById('blog-5-add');
+        // append new element 
+        ul.appendChild(li);
+
+
+
+        // anouther add 
+
+        li.innerText = 'blog-6';
+        // where to
+        const ultwo = document.getElementById('blog-5-add');
+        // append new element 
+        ul.appendChild(li);
+
+
+
+        li.innerText = 'blog-7';
+        // where to
+        const ulthree = document.getElementById('blog-5-add');
+        // append new element 
+        ul.appendChild(li);
+
+
+
+
+
+
+        // add articale
+
+        const articale = document.createElement('articale');
+        articale.classList.add('blog');
+        const h3 = document.createElement('h3');
+        h3.innerText = 'my awsome vlog-20';
+
+        const p = document.createElement('p');
+        p.innerText = 'green university of bangladesh'
+        articale.appendChild(h3);
+        articale.appendChild(p);
+        // parent of articale
+        const blogsection = document.getElementById('blogs')
+
+        blogsection.appendChild(articale);
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
